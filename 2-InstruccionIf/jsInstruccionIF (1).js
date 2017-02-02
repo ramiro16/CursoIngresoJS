@@ -1,7 +1,10 @@
 function Mostrar()
-{
-//tomo la edad  
 
+if(años==15)
+{ 
+//tomo la edad  
+var años;
+años=document.getElementById("edad").value;
 
 
 }//FIN DE LA FUNCIÓN
