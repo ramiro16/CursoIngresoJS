@@ -4,17 +4,12 @@ function Mostrar()
 
 	var años
 	var estadocivil
-	var sol
-	var div
-	var cas
+
 
 	años=document.getElementById("edad").value;
 	estadocivil=document.getElementById("estadoCivil").value;
-	sol=document.getElementById("Soltero").value;
-	div=document.getElementById("Divorciado").value;
-	cas=document.getElementById("Casado").value;
 	
-	if(años<18&&estadocivil==cas||div){
+	if(años<18&&estadocivil!="soltero"){
 
 	alert("Es muy joven para no ser soltero");
 	}
