@@ -1,10 +1,16 @@
 function Mostrar()
 
-if(años==15)
-{ 
+{
+	var años
+	años=document.getElementById("edad").value;
+
+	if(años==15)
+	{
+		alert("niña bonita")
+	}
+
+
 //tomo la edad  
-var años;
-años=document.getElementById("edad").value;
 
 
 }//FIN DE LA FUNCIÓN
