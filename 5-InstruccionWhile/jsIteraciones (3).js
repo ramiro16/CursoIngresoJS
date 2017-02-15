@@ -1,13 +1,13 @@
 function Mostrar()
 {
 
-var clave = prompt("ingrese el número clave.");
+var clave = prompt("Ingrese la contraseña");
 
-while(clave!="utn750")
-{
+while(clave != "utn750")
+	{
+		
+		clave = prompt();
 
-	alert=prompt()
-}
-
+	}
 
 }//FIN DE LA FUNCIÓN

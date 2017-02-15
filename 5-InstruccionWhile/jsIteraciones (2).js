@@ -1,14 +1,18 @@
 function Mostrar()
 {
-	var contador
-	contador=10
-	while(contador>1)
-	{
-		contador=contador-1
-		alert(contador);
+	var numero = 11;
 
+	while( numero > 1 )
+		{
+			numero = numero - 1;
 
-	}
+			console.log(numero);
+
+			
+
+		}
+
+	
 
 
 }//FIN DE LA FUNCIÓN
