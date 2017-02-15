@@ -39,7 +39,8 @@ function CalcularPrecio ()
 
 	}
 
-	else if(cantidad==5&&marca=="ArgentinaLuz")
+
+	else if(cantidad==5&&marca=="ArgentinaLuz")	
 	{
 		
 		resultado=precio*5;
@@ -56,6 +57,7 @@ function CalcularPrecio ()
 
 	}
 
+
 	else if(cantidad==5&&marca!="ArgentinaLuz")
 	{
 		resultado=precio*5;
@@ -68,13 +70,96 @@ function CalcularPrecio ()
 
 		document.getElementById("precioDescuento").value=resultado3;
 
+	}
+
+ 	
+ 	else if(cantidad==4&&marca=="ArgentinaLuz"||marca=="FelipeLamparas") 
+	{
+
+		resultado=precio*4;
+		resultado2=resultado*0.25;
+		resultado3=resultado-resultado2;
+
+		resultado=parseInt(resultado);
+		resultado2=parseInt(resultado2);
+		resultado3=parseInt(resultado3);
+
+		
+		document.getElementById("precioDescuento").value=resultado3;
 
 	}
 
-	else if(cantidad==4&&marca=="ArgentinaLuz"||) {}
+	else if(cantidad==4&&marca!="ArgentinaLuz"||"FelipeLamparas")
+
+	{
+
+		resultado=precio*4;
+		resultado2=resultado*0.2;
+		resultado3=resultado-resultado2;
+
+		resultado=parseInt(resultado);
+		resultado2=parseInt(resultado2);
+		resultado3=parseInt(resultado3);
+
+		document.getElementById("precioDescuento").value=resultado3;
+
+	}
+
+	if(cantidad==3&&marca=="ArgentinaLuz")
+	{
+		resultado=precio*3;
+		resultado2=resultado*0.15;
+		resultado3=resultado-resultado2;
+
+		resultado=parseInt(resultado);
+		resultado2=parseInt(resultado2);
+		resultado3=parseInt(resultado3);
+
+		document.getElementById("precioDescuento").value=resultado3;
+
+	}
+
+	else if(cantidad==3&&marca=="FelipeLamparas")
+	{
+		resultado=precio*3;
+		resultado2=resultado*0.1;
+		resultado3=resultado-resultado2;
+
+		resultado=parseInt(resultado);
+		resultado2=parseInt(resultado2);
+		resultado3=parseInt(resultado3)
+
+		document.getElementById("precioDescuento").value=resultado3;
+
+	}
+
+	else if(cantidad==3&&marca!="ArgentinaLuz"&&"FelipeLamparas")
+	{
+		resultado=precio*3;
+		resultado2=resultado*0.05;
+		resultado3=resultado-resultado2;
+
+		resultado=parseInt(resultado);
+		resultado2=parseInt(resultado2);
+		resultado3=parseInt(resultado3);
+
+		document.getElementById("precioDescuento").value=resultado3;
 
 
 
+	}
 
+	if(resultado3>=120)
+	{
+		resultado4=resultado3*0.1;
+		resultado5=resultado4+resultado3;
+
+		resultado3=parseInt(resultado3);
+		resultado4=parseInt(resultado4);
+		resultado5=parseInt(resultado5);
+
+
+		alert("IIBB ustede pagó "+ resultado5)
+	}
 
 }
