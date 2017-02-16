@@ -1,17 +1,58 @@
 function Mostrar()
 {
+// declarar variables
 
-	var contador=0;
-	// declarar variables
-	
-	var respuesta='si';
+var numero;
+var respuesta;
+var max;
+var min;
+var primera = true;
 
-	while(respuesta!='no')
+while(respuesta != false)
 	{
-		
-	
-	}
+		numero = prompt("Ingrese su numero");
+		numero = parseInt(numero);
 
+		respuesta = confirm("¿Desea agregar otro numero?");
+
+		if(primera)  // <-----Bandera */
+			{
+
+				max = numero;
+				min = numero;
+				primera = false; // <---- valor cambiado de la bandera, para que no vuelva entrar */
+
+			}
+
+			else
+				{
+					if(numero > max)
+					{
+
+						
+
+					}
+
+
+					if(numero < min)
+					{
+
+						
+
+					}
+
+
+				}
+ 
+
+
+				document.getElementById("maximo").value=max;
+				document.getElementById("minimo").value=min;
+
+
+
+	}
+	
 
 
 

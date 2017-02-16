@@ -1,27 +1,27 @@
 function Mostrar()
 {
 
-var num = 0;
+var contador = 0;
 
-var numing;
+var num;
 
 var acumulador = 0;
 
-while(num<5)
+while(contador<5)
 	{
 
-		num++;
+		contador++;
 
-		numing=prompt("Ingrese un numero");
+		num=prompt("Ingrese un numero");
 
-		numing = parseInt(numing);
+		num = parseInt(num);
 
-		acumulador += numing;
+		acumulador += num;
 
 
 	}
 
-	promedio = acumulador / num;
+	promedio = acumulador / contador;
 
 	document.getElementById("suma").value=acumulador;
 

@@ -19,8 +19,6 @@ function piedra()
 	switch(eleccionMaquina)
 		{
 
-			comenzar();
-
 			case"1":
 			alert("Empató");
 			break;
@@ -40,6 +38,9 @@ function papel()
 {
 	switch(eleccionMaquina)
 	{
+		
+	
+
 		case"1":
 		alert("Ganó");
 		break;
@@ -58,6 +59,8 @@ function tijera()
 {
 	switch(eleccionMaquina)
 	{
+
+
 		case"1":
 		alert("Perdió");
 		break;
